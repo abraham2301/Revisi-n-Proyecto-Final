@@ -4,7 +4,6 @@ C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Ve
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(111,7): warning C4101: 'q_estado': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(113,13): warning C4101: 'fila': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(129,14): warning C4101: 'resultado': variable local sin referencia
-C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(126,7): warning C4101: 'q_estado': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(128,13): warning C4101: 'fila': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Compra.h(102,14): warning C4101: 'resultado': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Compra.h(99,7): warning C4101: 'q_estado': variable local sin referencia
@@ -12,9 +11,15 @@ C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Co
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Compra.h(117,14): warning C4101: 'resultado': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Compra.h(114,7): warning C4101: 'q_estado': variable local sin referencia
 C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Compra.h(116,13): warning C4101: 'fila': variable local sin referencia
+  Venta.cpp
+C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(114,14): warning C4101: 'resultado': variable local sin referencia
+C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(111,7): warning C4101: 'q_estado': variable local sin referencia
+C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(113,13): warning C4101: 'fila': variable local sin referencia
+C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(129,14): warning C4101: 'resultado': variable local sin referencia
+C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\Supermercado_final\Venta.h(128,13): warning C4101: 'fila': variable local sin referencia
   Generando código
-  1 of 217 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  3 of 401 functions ( 0.7%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    28 functions had inline decision re-evaluated but remain unchanged
   Generación de código finalizada
   Supermercado_final.vcxproj -> C:\Users\Usuario\Desktop\proyecto final\Supermercado_final\x64\Release\Supermercado_final.exe

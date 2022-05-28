@@ -533,29 +533,81 @@ int main(){
             cout << "Respuesta: ";
             cin >> compraeleccion;
             if (compraeleccion == 1) {
+                system("cls");
                 Compra l = Compra();
                 l.leer();
             }
         }
         if (eleccion == 8) {
             int ventaeleccion;
-            int idVen, nofactura, idclient, idemple;
-            string seri, fechafac, fechaingre, total;
+            int idVen, nofactura, idclient, idemple,canti;
+            string seri, fechafac, fechaingre, total,idproductoss;
+            float preciou;
+            vector<string> idproducto;
+            vector<int> cantidades;
+            vector<double> precio_unitario;
             system("cls");
-            cout << "Leer compra: 1" << endl;
-            cout << "Crear compra: 2" << endl;
-            cout << "eliminar compra: 3" << endl;
-            cout << "Modiciar compra: 4" << endl;
+            cout << "Leer Ventas: 1" << endl;
+            cout << "Crear Ventas: 2" << endl;
+            cout << "eliminar Ventas: 3" << endl;
+            cout << "Modiciar Ventas: 4" << endl;
             cout << "Respuesta: ";
             cin >> ventaeleccion;
             if(ventaeleccion==1){
+                system("cls");
                 Venta l = Venta();
                 l.leer();
 
             }
             else {
                 if (ventaeleccion == 2) {
+                    system("cls");
+                    seri = "A";
+                    cout << "Ingresa la No. de factura: ";
+                    cin >> nofactura;
+                    cin.ignore();
+                    cout << "Ingresa fecha facturada: ";
+                    getline(cin, fechafac);
+                    cin.ignore();
+                    cout << "Ingresa el id del cliente: ";
+                    cin >> idclient;
+                    cin.ignore();
+                    cout << "Ingresa el id del empleado: ";
+                    cin >> idemple;
+                    cin.ignore();
+                    cout << "Ingresa la fecha de ingreso: ";
+                    getline(cin, fechaingre);
+                    cin.ignore();
+                    cout << "Ingresa el id del producto: ";
+                    getline(cin, idproductoss);
+                    idproducto.push_back(idproductoss);
+                    cin.ignore();
+                    cout << "Ingresa las cantidades: ";
+                    cin >> canti;
+                    cantidades.push_back(canti);
+                    cin.ignore();
+                    cout << "Ingresa el precio: ";
+                    cin >> preciou;
+                    precio_unitario.push_back(preciou);
 
+                    Venta c = Venta();
+                    c.set_serie(seri);
+                    c.set_nofactura(nofactura);
+                    c.set_idcliente(idclient);
+                    c.set_idempleado(idemple);
+                    c.set_fechaingreso(fechaingre);
+                    c.set_fechafactura(fechafac);
+                    c.crear(idproducto, cantidades, precio_unitario);
+                }
+                else {
+                    if (ventaeleccion == 3) {
+                        system("cls");
+                        cout << "ingresa el id del producto a eliminar: ";
+                        cin >> idVen;
+                        Venta e = Venta();
+                        e.set_idVenta(idVen);
+                        e.eliminar();
+                    }
                 }
             }
         }

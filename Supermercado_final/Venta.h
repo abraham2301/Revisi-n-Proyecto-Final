@@ -129,7 +129,20 @@ public:
 		MYSQL_RES* resultado;
 		cn.abrir_conexion();
 		if (cn.getConectar()) {
+			string borrar = to_string(idVenta);
+			string eliminar = "delete from ventas where id_ventas=" + borrar + ";";
+			const char* e = eliminar.c_str();
+			q_estado = mysql_query(cn.getConectar(), e);
+			if (!q_estado) {
+				cout << "--------- Eliminacion exitosa ----------" << endl;
 
+				string eliminar1 = "delete from ventas_detalle where id_Venta=" + borrar + ";";
+				const char* e1 = eliminar1.c_str();
+				q_estado = mysql_query(cn.getConectar(), e1);
+			}
+			else {
+				cout << "------------ Eliminacion fallida ----------" << endl;
+			}
 		}
 		else {
 			cout << "---------- Error de la conexion ---------" << endl;
